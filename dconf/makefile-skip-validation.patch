@@ -1,0 +1,19 @@
+commit 929caa925600c5cac868122379ee01456902042f
+Author: root <root@esil782.ac.bankit.it>
+Date:   Thu Sep 13 11:18:00 2012 +0200
+
+    add skip validation to makefile
+
+diff --git a/Makefile b/Makefile
+index 25eb6dc..372ff85 100644
+--- a/Makefile
++++ b/Makefile
+@@ -42,7 +42,7 @@ clean:
+ 	asciidoc -b xhtml11 -d manpage $<
+ 
+ %.1: %.1.xml
+-	xmlto man $<
++	xmlto --skip-validation man $<
+ 
+ %.xml: %.txt
+ 	asciidoc -b docbook -d manpage $<

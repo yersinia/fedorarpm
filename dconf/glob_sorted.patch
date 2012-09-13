@@ -1,0 +1,13 @@
+diff --git a/dconf b/dconf
+index da6607e..622aec6 100755
+--- a/dconf
++++ b/dconf
+@@ -403,7 +403,7 @@ def main():
+ 				if not flist: continue
+ 				extra = '|'.join(flist[1:])
+ 				if extra: extra = extra + ' '
+-				for file in glob.glob(flist[0].strip()):
++				for file in sorted(glob.glob(flist[0].strip())):
+ 					if not file or not os.path.isfile(file): continue
+ 
+ 					if fnmatches(file):
