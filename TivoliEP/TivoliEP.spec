@@ -181,6 +181,6 @@ exit 0
 - Added the right dependency from the shell script
 - No debuginfo produced any more
 - Added chcon for proper symlinks selinux filelabel
-* Thu Jul 27 2006 Claudio Panichi <yersinia.spiros@gmail.com> 4.1.1.2.0-1dsss
+* Thu Jul 27 2006 Elia Pinto <yersinia.spiros@gmail.com> 4.1.1.2.0-1dsss
 - RPMification
 
